@@ -9,13 +9,13 @@ header h1 {
 }
 
 /* High Score Area Begins */
-.high-score {
+.container a {
     color: red;
     text-align: left;
     margin: 20px auto 5px 20px;
 }
 
-.high-score:hover {
+.container a:hover {
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 1px 1px black;
 }

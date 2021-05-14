@@ -1,0 +1,37 @@
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(129, 78, 78);
+    text-align: center;
+    padding: 10px 0px;
+    margin: 15px 0px 55px 0px;
+    border-radius: 20px;
+    color: white;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: left;
+    
+}
+button {
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(129, 78, 78);
+    padding: 10px;
+    box-shadow: 0 10px 20px 0 rgba(9, 0, 0);
+    display:flex
+    
+    
+}
+
+button:hover {
+    background-color: cornflowerblue;
+    color: black;
+}
