@@ -3,20 +3,34 @@ header h1 {
     background-color: rgb(129, 78, 78);
     text-align: center;
     padding: 10px 0px;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 5px 0px;
     border-radius: 20px;
     color: white;
 }
 
-header h2 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 30px;
+/* High Score Area Begins */
+.high-score {
+    color: red;
+    text-align: left;
+    margin: 5px auto 5px 20px;
 }
 
-header p {
-    text-align: center;
-    font-size: 25px;
+.high-score:hover {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px black;
+}
+
+/* High Score Area Ends */
+
+/* Button section begins */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+div .countdown button {
+    border-radius: 8px;
+    margin: 5px 20px 5px auto;
 }
 
 div button {
@@ -26,16 +40,37 @@ div button {
     border: none;
     text-decoration: none;
     display: flex;
-    background-color: rgb(129, 78, 78);
-    color: white;
     border-radius: 10px;
     margin: 20px;
     padding: 15px;
     box-shadow: 0 10px 20px 0 rgba(9, 0, 0);
-    /*flex-wrap: wrap;*/
 }
 
-div button:hover {
+button {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(129, 78, 78);
+}
+
+button:hover {
     background-color: cornflowerblue;
     color: black;
 }
+
+/* Button section ends */
+
+/* Question Area Begins*/
+section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+}
+
+section p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* Question Area Ends */
+
