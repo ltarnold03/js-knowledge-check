@@ -11,8 +11,9 @@ header h1 {
 input {
     border-radius: 10px;
     font-size: 25px;
-    text-align: left;
-    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 button {
     margin: 10px 0 0 0;
