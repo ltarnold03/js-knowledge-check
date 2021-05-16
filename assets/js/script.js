@@ -1,3 +1,11 @@
+var timeCounter = 10;
+
+function question1() {
+    if (1 === "btn-2")
+    alert("Incorrect");
+};
+question1();
+
 /* Button objects begin */
 var buttonEl = document.querySelector("#clock");
 console.log(buttonEl);
@@ -234,3 +242,37 @@ buttonEl.addEventListener("click", function() {
 });
 /* Event Listener Ends */
 
+/* On Click*/
+//var counter = 5
+////function countdown() {
+  //  document.getElementById("clock").innerHTML
+//console.log(counter);
+//counter--;
+//if (counter === 0) {
+  //  clearInterval(startCountdown);
+//console.log("time up");
+//};
+//};
+
+var lapseEl = document.getElementById('countdown');
+//var
+//var
+
+function countdown() {
+
+var timeLapse = 10;
+
+var timeInterval = setInterval(function() {
+if (timeLapse > 1) {
+lapseEl.textContent = timeLapse + ' minute(s) remining';
+timeLeft--;
+}
+else {
+    lapseEl.textContent = '';
+    clearInterval(timeInterval);
+}
+
+}, 1000);
+};
+
+var startCountdown = setInterval(countdown, 1000);
