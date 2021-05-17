@@ -1,120 +1,175 @@
-var timeCounter = 10;
-var answerEl = document.querySelector("#answer-content")
+var body = document.body;
+body.setAttribute('style', 'textAlign:center');
 
-function question1() {
-    var buttonEl = document.querySelector("#answer-1");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-2");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-3");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-4");
-    console.log(buttonEl)
-    
-};
-question1();
+var h1 = document.createElement('h1')
+h1.textContent = "Knowledge Check";
+h1.setAttribute('style', 'text-align:center');
+body.appendChild(h1);
 
-function question2() {
-    var buttonEl = document.querySelector("#answer-5");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-6");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-7");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-8");
-    console.log(buttonEl)
-}
-question2;
+var h3 = document.createElement('h3');
+h3.textContent = 'The web storage API setItem method receives which two arguments?';
+h3.setAttribute('style', 'text-align:center;');
 
-function question3() {
-    var buttonEl = document.querySelector("#answer-9");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-10");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-11");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-12");
-    console.log(buttonEl)
-}
+body.appendChild(h3);
 
-function question4() {
-    var buttonEl = document.querySelector("#answer-13");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-14");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-15");
-    console.log(buttonEl)
-    var buttonEl = document.querySelector("#answer-16");
-    console.log(buttonEl)
-}
+var btn = document.createElement('button');
+btn.innerHTML = "A.) variables and objects";
+btn.addEventListener("click", function() {
+    console.log("A is clicked");
+})
+document.body.appendChild(btn);
 
-function question5() {
-    var buttonEl = document.querySelector("#answer-17");
-console.log(buttonEl)
-var buttonEl = document.querySelector("#answer-18");
-console.log(buttonEl)
-var buttonEl = document.querySelector("#answer-19");
-console.log(buttonEl)
-var buttonEl = document.querySelector("#answer-20");
-console.log(buttonEl)
-}
+var btn = document.createElement('button');
+btn.innerHTML = "B.) a key-value pair";
+btn.addEventListener("click", function() {
+    console.log("B is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "C.) parameter and property";
+btn.addEventListener("click", function() {
+    console.log("C is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "D.) none of the above";
+btn.addEventListener("click", function() {
+    console.log("D is clicked");
+})
+document.body.appendChild(btn);
+
+var h3 = document.createElement('h3');
+h3.textContent = 'A data type that can store more then one value, such as an array?';
+h3.setAttribute('style', 'text-align:center;');
+body.appendChild(h3);
+
+var btn = document.createElement('button');
+btn.innerHTML = "A.) primitive";
+btn.addEventListener("click", function() {
+    console.log("A is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "B.) objects";
+btn.addEventListener("click", function() {
+    console.log("B is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "C.) Booleans";
+btn.addEventListener("click", function() {
+    console.log("C is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "D.) variables";
+btn.addEventListener("click", function() {
+    console.log("D is clicked");
+})
+document.body.appendChild(btn);
+
+var h3 = document.createElement('h3');
+h3.textContent = 'Which of the following does not immediatly surround the text of a String?';
+h3.setAttribute('style', 'text-align:center;');
+body.appendChild(h3);
+
+var btn = document.createElement('button');
+btn.innerHTML = "A.) &lsquo; &rsquo;";
+btn.addEventListener("click", function() {
+    console.log("A is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "B.) &ldquo; &rdquo;";
+btn.addEventListener("click", function() {
+    console.log("B is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "C.) ``";
+btn.addEventListener("click", function() {
+    console.log("C is clicked");
+})
+document.body.appendChild(btn);
+
+var btn = document.createElement('button');
+btn.innerHTML = "D.) ()";
+btn.addEventListener("click", function() {
+    console.log("D is clicked");
+})
+document.body.appendChild(btn);
 
 
-/* Button objects begin */
-var buttonEl = document.querySelector("#clock");
-console.log(buttonEl);
+var h3 = document.createElement('h3');
+h3.textContent = 'What is the shorthand for addition in JavaScript?';
+h3.setAttribute('style', 'text-align:center;');
+body.appendChild(h3);
 
-/* Button objects end */
+var btn = document.createElement('button');
+btn.innerHTML = "A.) -";
+btn.addEventListener("click", function() {
+    console.log("A is clicked");
+})
+document.body.appendChild(btn);
 
-/* Event Listener Begins */
-var buttonEl = document.querySelector("#clock");
-var btnEl = document.querySelector("timer");
+var btn = document.createElement('button');
+btn.innerHTML = "B.) -=";
+btn.addEventListener("click", function() {
+    console.log("B is clicked");
+})
+document.body.appendChild(btn);
 
-buttonEl.addEventListener("click", function() {
-    var answerEl = document.createElement("button");
-    answerEl.className = "timer";
-    console.log("timer has been clicked")
-});
+var btn = document.createElement('button');
+btn.innerHTML = "C.) (-)";
+btn.addEventListener("click", function() {
+    console.log("C is clicked");
+})
+document.body.appendChild(btn);
 
-var answerButtonHandler = function(event) {
-    console.log(event.target);
-}
+var btn = document.createElement('button');
+btn.innerHTML = "D.) =-";
+btn.addEventListener("click", function() {
+    console.log("D is clicked");
+})
+document.body.appendChild(btn);
 
-answerEl.addEventListener("click", answerButtonHandler);
+var h3 = document.createElement('h3');
+h3.textContent = 'Which of these is the Not operator which is used to switch values?';
+h3.setAttribute('style', 'text-align:center;');
+body.appendChild(h3);
 
-/* Event Listener Ends */
+var btn = document.createElement('button');
+btn.innerHTML = "A.) .";
+btn.addEventListener("click", function() {
+    console.log("A is clicked");
+})
+document.body.appendChild(btn);
 
-/* On Click*/
-//var counter = 5
-////function countdown() {
-  //  document.getElementById("clock").innerHTML
-//console.log(counter);
-//counter--;
-//if (counter === 0) {
-  //  clearInterval(startCountdown);
-//console.log("time up");
-//};
-//};
+var btn = document.createElement('button');
+btn.innerHTML = "B.) ++";
+btn.addEventListener("click", function() {
+    console.log("B is clicked");
+})
+document.body.appendChild(btn);
 
-//var lapseEl = document.getElementById('countdown');
-//var
-//var
+var btn = document.createElement('button');
+btn.innerHTML = "C.) !";
+btn.addEventListener("click", function() {
+    console.log("C is clicked");
+})
+document.body.appendChild(btn);
 
-//function countdown() {
+var btn = document.createElement('button');
+btn.innerHTML = "D.) -";
+btn.addEventListener("click", function() {
+    console.log("D is clicked");
+})
+document.body.appendChild(btn);
 
-//var timeLapse = 10;
-
-//var timeInterval = setInterval(function() {
-//if (timeLapse > 1) {
-//lapseEl.textContent = timeLapse + ' minute(s) remining';
-//timeLeft--;
-//}
-//else {
-    //lapseEl.textContent = '';
-    //clearInterval(timeInterval);
-//}
-
-//}, 1000);
-//};
-
-//var startCountdown = setInterval(countdown, 1000);
