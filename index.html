@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <script src="./assets/js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Knowledge Check</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1 class="title">Knowledge &#10004;</h1>
+        </header>
+
+        <section class="container">
+            <div class="high-score">
+                <h3><a href="./high-score/view-high-scores.html">View High Scores</a></h3>
+            </div>
+
+            <div class="countdown">
+                <p class="minutes" id="lapse">minute placeholder</p>
+                <button class="timer" id="clock" onClick="countdown()">Start</button>
+            </div>
+        </section>
+
+        <main class="answer-content" id="answer-content">
+            <section onclick="question1()">
+                <h2 class="question-1">Question 1:</h2>
+                <p>The web storage API setItem method receives which two arguments?</p>
+                
+                <div class="btn">
+                    <button class="btn-1">A.) variables and objects</button>
+                    <button class="btn-2">B.) a key-value pair</button>
+                    <button class="btn-3">C.) parameter and property</button>
+                    <button class="btn-4">D.) none of the above</button>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="question-2">Question 2:</h2>
+                <p>A data type that can store more then one value, such as an array?</p>
+        
+                <div class="btn">
+                    <button class="btn-5">A.) primitive</button>
+                    <button class="btn-6">B.) objects</button>
+                    <button class="btn-7">C.) Booleans</button>
+                    <button class="btn-8">D.) variables</button>
+                </div>
+            </section>
+        
+            <section>
+                <h2 class="question-3">Question 3:</h2>
+                <p>Which of the following does not immediatly surround the text of a String?</p>
+        
+                <div class="btn">
+                    <button class="btn-9">A.) ''</button>
+                    <button class="btn-10">B.)""</button>
+                    <button class="btn-11">C.)``</button>
+                    <button class="btn-12">D.)()</button>
+                </div>
+            </section>
+        
+            <section>
+                <h2 class="question-4">Question 4:</h2>
+                <p>What is the shorthand for addition in JavaScript?</p>
+        
+                <div class="btn">
+                    <button class="btn-13">A.) -</button>
+                    <button class="btn-14">B.) -=</button>
+                    <button class="btn-15">C.) (-)</button>
+                    <button class="btn-16">D.) =-</button>
+                </div>
+            </section>
+        
+            <section>
+                <h2 class="question-5">Question 5:</h2>
+                <p>Which of these is the Not operator which is used to switch values?</p>
+        
+                <div class="btn">
+                    <button class="btn-17">A.) .</button>
+                    <button class="btn-18">B.) ++</button>
+                    <button class="btn-19">C.) !</button>
+                    <button class="btn-20">D.) -</button>
+                </div>
+            </section>
+        </main>
+   
+        <script src="./assets/js/script.js"></script>
+    </body>
 
 </html>
-       

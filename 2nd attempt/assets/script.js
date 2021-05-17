@@ -1,6 +1,11 @@
 var body = document.body;
 body.setAttribute('style', 'textAlign:center');
 
+var h1 = document.createElement('h1')
+h1.textContent = "Knowledge Check";
+h1.setAttribute('style', 'text-align:center');
+body.appendChild(h1);
+
 var h3 = document.createElement('h3');
 h3.textContent = 'The web storage API setItem method receives which two arguments?';
 h3.setAttribute('style', 'text-align:center;');
